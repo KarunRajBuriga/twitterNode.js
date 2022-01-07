@@ -20,7 +20,7 @@ const initializeDbAndServer = async () => {
       driver: sqlite3.Database,
     });
 
-    app.listen(3001, () =>
+    app.listen(3000, () =>
       console.log("Server Running at http://localhost:3000/")
     );
   } catch (error) {
@@ -149,7 +149,6 @@ app.get("/user/following/", authenticateToken, async (request, response) => {
   where username ='${username}';`;
   const id = await database.get(userId);
   const requiredID = id.user_id;
-  //console.log(requiredID);//
   const followingQuery = `
   SELECT user.name as name
   FROM follower INNER JOIN user ON follower.following_user_id = user.user_id
@@ -169,7 +168,6 @@ app.get("/user/followers/", authenticateToken, async (request, response) => {
   where username ='${username}';`;
   const id = await database.get(userId);
   const requiredID = id.user_id;
-  console.log(requiredID);
   const followersQuery = `
   SELECT user.name as name
   FROM follower INNER JOIN user ON follower.follower_user_id = user.user_id

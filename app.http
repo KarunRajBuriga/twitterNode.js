@@ -4,9 +4,9 @@ POST http://localhost:3000/register/
 Content-Type:application/json
 
 {
-  "username": "karub_kkvesvegv",
-  "password": "richcev",
-  "name": "Adam Richard",
+  "username": "kar_kkvesvegv",
+  "password": "ricvcavev",
+  "name": "Adam Ricrd",
   "gender": "male"
 }
 
@@ -44,7 +44,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZ
 
 /// 7 GET TWEET LIKED LIST
 ###
-GET http://localhost:3000/tweets/5/likes/
+GET http://localhost:3000/tweets/8/likes/
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjI3NDA4OTE2fQ._9otLnA73j8wV9fkl965Ro3fFCF1qCbekYEf02GgI9c
 
 ///8 GET TWEET REPLIES
@@ -70,5 +70,5 @@ Content-Type: application/json
 
 ///11DELETE
 ###
-DELETE http://localhost:3000/tweets/1/
+DELETE http://localhost:3000/tweets/4/
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjI3MzkwMDYzfQ.bklgQWBxYizbh37AWn1iPcfkrp1ELQo4Hg4X4_daJg0
